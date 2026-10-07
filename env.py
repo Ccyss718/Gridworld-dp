@@ -10,6 +10,9 @@ class GridWorld:
     }
 
     def __init__(self) -> None:
+        """
+        属性
+        """
         self.rows = 4
         self.cols = 4
 
@@ -30,6 +33,9 @@ class GridWorld:
         self.steps = 0
 
     def reset(self) -> State:
+        """
+        归零 初始化
+        """
         self.state = self.start
         self.steps = 0
         return self.state
@@ -43,7 +49,9 @@ class GridWorld:
         return row_is_valid and col_is_valid
 
     def transition(self, state: State, action: int) -> tuple[State, float, bool]:
-        
+        """
+        模拟采取action后的下一状态、收获、是否终点
+        """
         if state == self.goal:
             return state, 0.0, True
 
