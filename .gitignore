@@ -1,0 +1,22 @@
+# Python缓存
+__pycache__/
+*.py[cod]
+
+# pytest缓存
+.pytest_cache/
+
+# 虚拟环境
+.venv/
+venv/
+
+# 环境变量和密钥
+.env
+
+# IDE配置
+.idea/
+.vscode/
+
+# PyTorch模型文件
+*.pt
+*.pth
+*.ckpt
